@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: white;
+}
+html, body {
+  min-height: 100%;
+}
+body {
+  background: radial-gradient(at top left, rgba(146,43,225,1) 0%, rgba(43,9,107,1) 100%);
+  background-repeat: no-repeat;
+}
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
+}
+
+/* layout & nav */
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px auto;
+}
+nav h1 {
+  font-size:1.5em;
+  font-weight:bold;
+}
+nav .links {
+  display: inline-block;
+  text-align: right;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+nav a:hover {
+  border-color: white;
+  color: #fff;
+}
+
+/* Main page */
+.header {
+  margin-top: 9rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  align-items: center;
+}
+.header h2 {
+  font-size: 4em;
+  font-weight: bold;
+}
+.header h3 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.header img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/* Form in index page */
+.container {
+  margin-top: 10rem;
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  padding: 1rem;
+}
+.card-body {
+  padding: 2.5rem;
+}
+.form-label {
+  color: #000;
+}
+.form-control:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #D42990;
+  outline: 0;
+  box-shadow: 0 8px 20px 0 rgb(212 41 144 / 20%);
+}
+.btn {
+  border: none;
+  color: #fff;
+  background: #D42990;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  width: fit-content;
+}
+.btn:hover {
+  color: #fff;
+  background: #D42990;
+  box-shadow: 0 8px 20px 0 rgb(212 41 144 / 50%)
+}
+.btn:active:focus, .show > .btn.dropdown-toggle:focus {
+  box-shadow: none;
+  border: none;
+  background: #D42990;
+}
+
+/* Circuit Diagram Page */
+.circuit img {
+  margin-top: 1rem;
+}

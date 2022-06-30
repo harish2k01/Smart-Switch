@@ -1,0 +1,11 @@
+pandas
+numpy
+keras
+tensorflow
+scikit-learn
+pyaml
+matplotlib
+flask
+pyserial
+yagmail
+xhtml2pdf

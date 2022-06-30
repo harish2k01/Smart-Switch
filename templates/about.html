@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Switch</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}"> 
+</head>
+<body>
+
+	<div class="layout">
+		<nav>
+			<h1>Smart Switch</h1>
+			<div class="links">
+				<a href="{{ url_for('index') }}">Home</a>
+				<a href="{{ url_for('about') }}">About</a>
+				<a href="{{ url_for('circuit') }}">Circuit Diagram</a>
+			</div>
+		</nav>
+		<div>
+            <h1>About</h1>
+            <p>The Smart switch is a switch that measures the future trends of electricity consumption, it is a product that is much needed in today’s world where electricity plays an important role that is being consumed by industries and domestics on regular basis. The demand and supply of the relationship of electricity are always at troubles in critical times. It raises power cuts. The main reason for this problem is that prediction of the electricity consumption trend is not well predicted. Presently, we use the human expertise of senior members of the electricity board to predict the trends. However, it may not be well in a situation where the demands are changing dynamically. Hence, we need to analyse the prediction trends through computing models. Machine learning is a computing model that uses existing data to predict the future trends of existing data.</p>
+			<p>This project presents a smart switch to predict the load trends of electricity in domestic using machine learning. This agent comes with hardware and software components. The hardware component is a programmed switch that supplies the current to the appliances. This switch is programmed in a such way that it measures the current flow consumption and duration using Arduino and Current Sensors.</p>
+            <p>The measured information will be sent to the database. The database will keep collecting information 24x7(until the switch is ON). The software component brings a backend processing unit that is connected to the databases. The collected Dataset is then processed through a machine learning analyser to predict the trends of load consumption.</p>
+        </div>
+	</div>
+
+</body>
+</html>
